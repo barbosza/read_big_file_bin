@@ -5,11 +5,11 @@
 
 
 void mostra_registro(Diario *p){
-        FILE *fp;
-    fp = fopen("vaicaber.bin","w+b");
-    fwrite(p,sizeof(Diario),552200,fp);
-    fclose(fp);
-     //printf("%d %22s\n", p->matricula, p->nome, p->matricula);
+    //FILE *fp;
+    //fp = fopen("vaicaber.bin","wb");
+    //fwrite(p,sizeof(Diario), 3276008,fp);
+  //  fclose(fp);
+     printf("%d %22s\n", p->matricula, p->nome, p->matricula);
 }
 
 void mostra_float(void *info)
@@ -26,18 +26,17 @@ int main()
     Diario aux;
     inicializa_lista(&l1, sizeof(Diario));
     printf("%d\n\n",sizeof(Diario));
-    while(x < 552200){
+    for(x=0;x<320000000000;x++){
 
     aux.faltas = 1;
-    aux.nome = "Marcos";
-    aux.matricula = 0001;
+    strcpy(aux.nome, "Marcos");
+    aux.matricula = x;
     aux.notas = 4;
 
     insereNoInicio(&l1,&aux);
-    x++;
+
     }
 
-    mostra_lista(l1, mostra_registro);
-
-
+  //  mostra_lista(l1, mostra_registro);
+    return 0;
 }

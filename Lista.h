@@ -3,7 +3,7 @@
 
 
 typedef struct{
-    char* nome;
+    char nome[24];
     int matricula;
     int notas;
     int faltas;
