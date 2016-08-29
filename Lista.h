@@ -2,13 +2,6 @@
 #define ERRO_POSICAO_INVALIDA -2
 
 
-typedef struct{
-    char nome[24];
-    int matricula;
-    int notas;
-    int faltas;
-}Diario;
-
 typedef struct ele
 {
     void *info;
