@@ -31,10 +31,10 @@
 		<Compiler>
 			<Add option="-Wall" />
 		</Compiler>
-		<Unit filename="LDE.c">
+		<Unit filename="Lista.c">
 			<Option compilerVar="CC" />
 		</Unit>
-		<Unit filename="LDE.h" />
+		<Unit filename="Lista.h" />
 		<Unit filename="main.c">
 			<Option compilerVar="CC" />
 		</Unit>
