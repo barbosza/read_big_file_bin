@@ -125,7 +125,7 @@ Elemento *aloca_elemento(int tamInfo, void *info)
 void mostra_lista(Lista l, void (*mostra_info)(void *))
 {
     if(lista_vazia(l))
-        printf("A lista está vazia\n");
+        printf("Empty List\n");
     else
     {
         Elemento *p = l.cabeca;
