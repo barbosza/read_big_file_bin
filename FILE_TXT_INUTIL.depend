@@ -1,0 +1,22 @@
+# depslib dependency file v1.0
+1472435920 source:c:\users\marcos\documents\pra0002\file_txt_inutil\lde.c
+	"LDE.h"
+	<stdlib.h>
+	<stdio.h>
+	<string.h>
+	<math.h>
+
+1472437707 c:\users\marcos\documents\pra0002\file_txt_inutil\lde.h
+
+1472440803 source:c:\users\marcos\documents\pra0002\file_txt_inutil\main.c
+	<stdio.h>
+	<stdlib.h>
+	"Lista.h"
+
+1472438015 source:c:\users\marcos\documents\pra0002\file_txt_inutil\lista.c
+	"Lista.h"
+	<stdlib.h>
+	<stdio.h>
+
+1472440348 c:\users\marcos\documents\pra0002\file_txt_inutil\lista.h
+

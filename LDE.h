@@ -2,6 +2,8 @@
 #define ERRO_POS_INVALIDA -1
 #define ERROR_INVALID_CARACTER -2
 
+
+
 typedef struct eleDuplo{
     void *info;
     struct eleDuplo *ant, *suc;
