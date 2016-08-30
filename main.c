@@ -2,8 +2,8 @@
 #include <stdlib.h>
 #include "Lista.h"
 #include <string.h>
-#define ENTITY 2
-#define LOOP 10
+#define ENTITY 20000
+#define LOOP 16384
 #define MB_SIZE 1048576
 
 typedef struct {
@@ -64,10 +64,9 @@ int main()
             dac[z].matricula = globalCounter;
             dac[z].notas = (double)((double)media/(double)b);
             globalCounter++;
-    }
+        }
 
         fwrite(dac,sizeof(Diario),ENTITY,p);
-
         system("cls");
 
     }
@@ -76,7 +75,7 @@ int main()
     fseek(p,0,SEEK_END);
     long fileSize = ftell((p));
     rewind(p);
-    int numEntries = (int)(fileSize / (sizeof(Diario)));
+    //int numEntries = (int)(fileSize / (sizeof(Diario)));
     //fread(dac,sizeof(dac),ENTITY,p);
     char aluno;
     int y = 0;
@@ -92,7 +91,7 @@ int main()
                 } else {
                     aluno = 'R';
                 }
-                printf("%2lld%22s%22.2lf%5c\n\n",aux[x].matricula,aux[x].nome,aux[x].notas,aluno);
+               // printf("%2lld%22s%22.2lf%5c\n\n",aux[x].matricula,aux[x].nome,aux[x].notas,aluno);
         }
 
     }
