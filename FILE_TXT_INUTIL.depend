@@ -8,10 +8,11 @@
 
 1472437707 c:\users\marcos\documents\pra0002\file_txt_inutil\lde.h
 
-1472505762 source:c:\users\marcos\documents\pra0002\file_txt_inutil\main.c
+1472585410 source:c:\users\marcos\documents\pra0002\file_txt_inutil\main.c
 	<stdio.h>
 	<stdlib.h>
 	"Lista.h"
+	<string.h>
 
 1472503162 source:c:\users\marcos\documents\pra0002\file_txt_inutil\lista.c
 	"Lista.h"
